@@ -1,0 +1,61 @@
+## 
+
+### 在 Ubuntu 22.04 上安装 Docker
+
+**步骤 1：更新系统**
+
+```
+sudo apt update
+```
+
+**步骤 2：安装 Docker 依赖项**
+
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+
+**步骤 3：添加 Docker 官方 GPG 密钥**
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+**步骤 4：添加 Docker 存储库**
+
+```
+echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" | sudo tee /etc/apt/sources.list.d/docker.list
+```
+
+**步骤 5：更新系统**
+
+```
+sudo apt update
+```
+
+**步骤 6：安装 Docker 引擎**
+
+```
+sudo apt install docker-ce -
+```
+
+**步骤 7：验证 Docker 是否已安装**
+
+```
+docker --version
+```
+
+**输出结果:**
+
+```
+Docker version 20.10.14, build e22a77e
+```
+
+**步骤 8：设置 Docker 用户组**
+
+**将您的用户添加到 docker 用户组，以便无需 sudo 即可运行 Docker 命令:**
+
+```
+sudo usermod -aG docker $USER
+```
+
+**注销并重新登录后，您就可以无需 sudo 即可运行 Docker 命令。**

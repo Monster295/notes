@@ -1,4 +1,4 @@
-site_name: 笔记
+site_name: CXL的笔记
 theme:
   name: material
   font:
@@ -26,6 +26,8 @@ theme:
       accent: deep purple
   features:
     - navigation.footer
+    - content.code.copy
+    - content.code.annotate
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
