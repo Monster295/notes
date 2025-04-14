@@ -3,7 +3,9 @@
 2. 执行以下命令，其中 `<` 后的路径是sql文件在宿主机中的路径
    
    ```shell
-   docker exec -i CONTAINER_NAME_OR_ID mysql -uUSERNAME -pPASSWORD DATABASE_NAME < /path/inside/container/dump.sql
+   docker exec -i CONTAINER_NAME_OR_ID mysql 
+   -uUSERNAME -pPASSWORD DATABASE_NAME 
+   < /path/inside/container/dump.sql
    ```
    
    在这里，你需要替换以下占位符：
