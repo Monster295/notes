@@ -1,35 +1,31 @@
 site_name: 笔记
 theme:
   name: material
-
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-
-  icon:
-    logo: material/library
-
+  # 徽标设置  
+  logo: assets/logo.png
+  favicon: assets/fish.ico
+  #icon:
+    #logo: material/library
   palette:
     # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: 光明
       primary: grey
       accent: deep orange
-
     # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
+        name: 黑暗
       primary: grey
       accent: deep purple
-
   features:
     - navigation.footer
-
-
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
