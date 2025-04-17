@@ -2,8 +2,8 @@ site_name: CXL的笔记
 theme:
   name: material
   font:
-    text: Merriweather Sans
-    code: Red Hat Mono
+    text: Roboto
+    code: Roboto Mono
   # 徽标设置  
   logo: assets/logo.png
   favicon: assets/fish.ico
