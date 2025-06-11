@@ -2,6 +2,40 @@
 
 ### 在 Ubuntu 22.04 上安装 Docker
 
+开始安装:
+
+1、检查卸载老版本Docker
+
+```bash
+sudo apt-get remove docker docker-engine docker.io containerd runc 
+```
+
+2、更新软件包
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+3、安装docker依赖
+```bash
+sudo apt-get install ca-certificates curl gnupg lsb-release
+```
+
+4、添加docker密钥
+```bash
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+```
+5、添加阿里云docker软件源
+```bash
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+```
+6、安装docker
+```bash
+apt install docker-ce docker-ce-cli containerd.io
+```
+---
+下方需要科学上网
+
 **步骤 1：更新系统**
 
 ```
