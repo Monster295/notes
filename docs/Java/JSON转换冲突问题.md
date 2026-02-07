@@ -46,4 +46,4 @@ public class JsonConverterConfig implements WebMvcConfigurer {
 }
 ```
 
-此外，对于使用 `fastjson @JSONField(format = "yyyy-MM-dd")` ，要替换成 `@JsonFormat(pattern = "yyyy-MM-dd")` ，否则返回前端的日期类型不会被正确格式化
+此外，对于使用 `fastjson @JSONField(format = "yyyy-MM-dd")` ，要替换成 `@JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")` ，否则返回前端的日期类型不会被正确格式化，注意时区
